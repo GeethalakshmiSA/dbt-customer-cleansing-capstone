@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: customer_raw
+    database: CUSTOMER_CLEANSING_DB
+    schema: RAW
+
+    tables:
+      - name: CUSTOMERS_RAW
+        description: "Raw landing table for customer source files"
+
+        columns:
+          - name: CUST_ID
+            description: "Customer business identifier"

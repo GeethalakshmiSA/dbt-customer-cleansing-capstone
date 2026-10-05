@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Standardized customer staging model created from the raw landing table."
+
+    columns:
+      - name: cust_id
+        description: "Customer business identifier"
+        data_tests:
+          - not_null
+
+      - name: country_code
+        description: "Customer country code"
+
+      - name: phone_number
+        description: "Customer phone number"
+
+      - name: email_address
+        description: "Customer email address"
